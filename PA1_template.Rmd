@@ -1,8 +1,8 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
 output: 
-  html_document:
-    keep_md: true
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r setoptions, echo = FALSE} 
@@ -35,6 +35,7 @@ First, I calculate the total number of steps per day by using the aggregate func
 TotalNumberOfSteps <- aggregate(steps~date,StepData,sum,na.rm=TRUE)
 hist(TotalNumberOfSteps$steps,main='Histogram',xlab='Total number of steps per day')
 print(paste0('Average of total number of steps per day is ', mean(TotalNumberOfSteps$steps)))
+print(paste0('Median of total number of steps per day is ', median(TotalNumberOfSteps$steps)))
 ```
 
 

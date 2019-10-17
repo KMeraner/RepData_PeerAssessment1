@@ -1,8 +1,8 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
 output: 
-  html_document:
-    keep_md: true
+  html_document: 
+    keep_md: yes
 ---
 
 
@@ -55,6 +55,14 @@ print(paste0('Average of total number of steps per day is ', mean(TotalNumberOfS
 
 ```
 ## [1] "Average of total number of steps per day is 10766.1886792453"
+```
+
+```r
+print(paste0('Median of total number of steps per day is ', median(TotalNumberOfSteps$steps)))
+```
+
+```
+## [1] "Median of total number of steps per day is 10765"
 ```
 
 
